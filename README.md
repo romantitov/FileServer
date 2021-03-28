@@ -2,6 +2,10 @@
 
 The repository contains an [API for a simple file server](https://github.com/romantitov/FileServer/tree/main/backend/src) and [integration tests for the API](https://github.com/romantitov/FileServer/tree/main/tests/src).
 
+
+
+
+
 ## Get started:
 
 0. Install [Docker](https://www.docker.com) 
@@ -36,4 +40,15 @@ You can use any of [ApiKeys from configurations](https://github.com/romantitov/F
   - Once the salution opened in Visual Studio and build, you can run tests as standart unit tests. Test->Run ALL tests.
     ![docs/TestExplorer.png](docs/TestExplorer.png)
 
-
+## What was implemented?
+- [x] [RESTful API](https://github.com/romantitov/FileServer/blob/main/backend/src/FileServer.Api/Controllers/FilesController.cs) for uploading/downloading documents and managing metadata.
+- [x] [Web API returns meaningful HTTP status codes for all cases](https://github.com/romantitov/FileServer/blob/main/backend/src/FileServer.Api/Middleware/ErrorHandlingMiddleware.cs)
+- [x] [Server side caching](https://github.com/romantitov/FileServer/blob/main/backend/src/FileServer.Api/Middleware/Caching/InMemoryCacheMiddleware.cs)
+- [x] [Integration tests](https://github.com/romantitov/FileServer/tree/main/tests/src) based on BDD SpeckFlow.
+- [x] [Dockerfile](https://github.com/romantitov/FileServer/blob/main/backend/src/FileServer.Api/Dockerfile) with [docker compose](https://github.com/romantitov/FileServer/blob/main/backend/src/docker-compose.yml) 
+- [x] [Configurable](https://github.com/romantitov/FileServer/blob/main/backend/src/FileServer.Api/Middleware/Logging/LoggingTypes.cs) [Logging for HTTP incoming requests](https://github.com/romantitov/FileServer/blob/main/backend/src/FileServer.Api/Middleware/Logging/RequestResponseLoggingMiddleware.cs)
+- [x] Api [versioning and correlation tracking](https://github.com/romantitov/FileServer/blob/main/backend/src/FileServer.Api/Startup.cs)
+- [x] Authentication mechanism based on ApiKey.
+- [x] There is no SPA client, but https://localhost:44348/swagger allows to upload/download documents and test all functionality available in the API.
+![docs/UploadFile.png](docs/UploadFile.png )
+![docs/DownloadFile.png](docs/DownloadFile.png)
