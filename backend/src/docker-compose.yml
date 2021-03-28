@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  mongo:
+    image: "mongo"
+    container_name: 'mongodb-file-server'
+    restart: always
+    ports:
+      - 27017:27017
+        
+  fileserver.api:
+    image: ${DOCKER_REGISTRY-}fileserverapi
+    build:
+      context: .
+      dockerfile: FileServer.Api/Dockerfile
+    ports: 
+      - "8000:80"
+      - "44348:443"
+    depends_on:
+      - mongo
+    links:
+      - mongo
+    
