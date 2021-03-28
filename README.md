@@ -35,9 +35,10 @@ You can use any of [ApiKeys from configurations](https://github.com/romantitov/F
  **Note:** enter a key prefixed with `ApiKey `  for example `ApiKey 123`.
  
  ## How to debug integration tests?
+  - Make sure that FIle Server API is up and running.
+  - Make sure that [configurations](https://github.com/romantitov/FileServer/blob/main/tests/src/FileServer.Tests.Specifications/appsettings.json) contains proper URL to File Server API.
   - Integration tests implemented based on [SpeckFlow](https://specflow.org/). So I would suggest you to install an [extenstion for Visual Studio](https://marketplace.visualstudio.com/items?itemName=TechTalkSpecFlowTeam.SpecFlowForVisualStudio) for better usage experience. 
   - You can find test scenarios [in Feature folder](https://github.com/romantitov/FileServer/blob/main/tests/src/FileServer.Tests.Specifications/Features/FileServer.feature)
-  - Make sure that [configurations](https://github.com/romantitov/FileServer/blob/main/tests/src/FileServer.Tests.Specifications/appsettings.json) contains proper URL to File Server API
   - Once the salution opened in Visual Studio and build, you can run tests as standart unit tests. Test->Run ALL tests.
     ![docs/TestExplorer.png](docs/TestExplorer.png)
 
