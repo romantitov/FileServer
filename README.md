@@ -11,6 +11,7 @@ The repository contains an [API for a simple file server](https://github.com/rom
 0. Install [Docker](https://www.docker.com) 
 1. Start server (execute [run.bat](https://github.com/romantitov/FileServer/blob/main/backend/src/run.bat))
     - The step will run docker compose which will install MongoDb and run the API.
+    - **Note:** if you have an issue with certificates on this step - try to run the solution in Visual Studio with docker compose (see below), it will install require certificate. After that `run.bat` will also work.
 3. Make sure that the API is up and running (open: https://localhost:44348/swagger).
 4. Run integration tests (execute [test.bat](https://github.com/romantitov/FileServer/blob/main/tests/src/test.bat))
    - At the end you will see path to test logs in your console
