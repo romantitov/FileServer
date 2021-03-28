@@ -39,7 +39,7 @@ You can use any of [ApiKeys from configurations](https://github.com/romantitov/F
   - Make sure that [configurations](https://github.com/romantitov/FileServer/blob/main/tests/src/FileServer.Tests.Specifications/appsettings.json) contains proper URL to File Server API.
   - Integration tests implemented based on [SpeckFlow](https://specflow.org/). So I would suggest you to install an [extenstion for Visual Studio](https://marketplace.visualstudio.com/items?itemName=TechTalkSpecFlowTeam.SpecFlowForVisualStudio) for better usage experience. 
   - You can find test scenarios [in Feature folder](https://github.com/romantitov/FileServer/blob/main/tests/src/FileServer.Tests.Specifications/Features/FileServer.feature)
-  - Once the solution is opened in Visual Studio and build, you can run tests as standart unit tests. Test->Run ALL tests.
+  - Once the solution is opened in Visual Studio and built, you can run tests as standart unit tests. Test->Run ALL tests.
     ![docs/TestExplorer.png](docs/TestExplorer.png)
 
 ## What was implemented?
