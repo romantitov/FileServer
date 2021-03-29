@@ -55,5 +55,6 @@ You can use any of [ApiKeys from configurations](https://github.com/romantitov/F
 ![docs/UploadFile.png](docs/UploadFile.png )
 ![docs/DownloadFile.png](docs/DownloadFile.png)
 
-## What was implemented?
+## What was not implemented?
 - [ ] For large files,  I would add an API which will allow to upload files in chunks.
+- [ ] I would add health check endpoint.
