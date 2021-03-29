@@ -54,3 +54,6 @@ You can use any of [ApiKeys from configurations](https://github.com/romantitov/F
 - [x] There is no SPA client, but https://localhost:44348/swagger allows to upload/download documents and test all functionality available in the API.
 ![docs/UploadFile.png](docs/UploadFile.png )
 ![docs/DownloadFile.png](docs/DownloadFile.png)
+
+## What was implemented?
+- [ ] For large files,  I would add an API which will allow to upload files in chunks.
